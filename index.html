@@ -1,49 +1,48 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <meta property="og:title" content="No" />
 <meta property="og:image" content="rudy-preview.jpg" />
 
 <title>No</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css" media="screen">
 
-.fill-screen {
+.viewport-container {
 	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
-}
-
-.fit-image {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	max-height: 100%;
-	width: 100%;
-	object-fit: scale-down;
-}
-
-.text {
-	left: 0;
-	position:absolute;
-	text-align:center;
-	top: 5%;
-	width: 100%;
+	position: relative;
+	text-align: center;
 	color: white;
+}
+
+.text-centered {
+	position: absolute;
+	top: 8%;
+	left: 5%;
+	right: 5%;
 	font-size: 80px;
+}
+
+.image-centered {
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: scale-down;
 }
 
 </style>
 </head>
 <body>
-<div class="fill-screen">
-	<img class="fit-image" src="rudy-base.jpg" alt="Felon?">
-	<div class="text">
+
+<div class="viewport-container">
+	<img src="rudy-base.jpg" alt="Felon?" class="image-centered">
+	<div class="text-centered">
 		Rudy is NOT in jail... Yet.
 	</div>
 </div>
-</body>
-</html>
 
+</body>
+</html> 
